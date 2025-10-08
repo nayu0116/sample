@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 113 141.3">
+  <!-- Generator: Adobe Illustrator 29.3.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 146)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #333;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <rect class="st0" x="2.5" y="2.5" width="108" height="136.3" rx="7.1" ry="7.1"/>
+  <polyline class="st0" points="80.2 12.1 99.3 12.1 99.3 128.4 13.7 128.4 13.7 12.1 32.1 12.1"/>
+  <rect class="st0" x="33.5" y="2.5" width="45.9" height="14.9"/>
+  <line class="st0" x1="27" y1="42.3" x2="85.9" y2="42.3"/>
+  <line class="st0" x1="27" y1="62.8" x2="85.9" y2="62.8"/>
+  <line class="st0" x1="27" y1="83.3" x2="85.9" y2="83.3"/>
+  <line class="st0" x1="27" y1="103.8" x2="85.9" y2="103.8"/>
+</svg>

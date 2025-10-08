@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+@page {
+  margin: 0mm 10mm 0mm 20mm;
+  size: A4 portrait;
+}
+
+body {
+  font-size: 16px;
+  background-color: transparent;
+  padding-top: 10mm;
+}
+
+select {
+  width: 100%;
+  color: var(--text-color);
+}
+
+input[type='checkbox'] {
+  height: 20px;
+  width: 20px;
+}
+
+input[type='checkbox']:checked::before {
+  border-right: 3px solid var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+}
+
+.container {
+  margin-top: -128px;
+}
+
+.inner {
+  max-width: 9999px;
+  width: 100vw;
+}
+
+#header {
+  padding-top: 0;
+}
+
+#header .inner {
+  display: block;
+}
+
+#header h2 {
+  text-align: center;
+}
+
+#header .account-menu {
+  display: none;
+}
+
+#checksheet {
+  margin-bottom: 0;
+}
+
+#checksheet .form {
+  margin: 0 3em;
+}
+
+.form-flex:not(:first-child),
+.item:not(:first-child) {
+  margin-top: 4px;
+}
+
+.label {
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.box .input,
+.box select {
+  border: 1px solid var(--text-color);
+  background: transparent;
+  padding: 4px 16px;
+}
+
+#checksheet input[name='orisuu'].input {
+  padding: 4px 10px 4px 16px;
+}
+
+.print-flex-item {
+  display: flex;
+  align-items: center;
+}
+
+.print-flex-item .label {
+  margin-right: 8px;
+}
+
+#checksheet .trisection {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 4px
+}
+
+#checksheet .front.slash::after,
+#checksheet .back.slash::after {
+  height: 60px;
+  transform: translate(-50%, -50%) rotate(73deg);
+}
+
+#checksheet .kensa {
+  margin-top: 8px;
+}
+
+#checksheet .checksheet {
+  margin-top: 16px;
+  padding: 0;
+}
+
+#checksheet .check-list {
+  margin-top: 4px;
+}
+
+#checksheet .item-title {
+  background-color: transparent;
+  border-bottom: 2px solid var(--text-color);
+  padding: 4px 6px;
+}
+
+#checksheet .check-list:first-of-type .item-title {
+  margin-bottom: 14px;
+}
+
+#checksheet .item-title:first-letter {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+#checksheet .check-list:first-of-type .list-item:first-of-type .front::before,
+#checksheet .check-list:first-of-type .list-item:first-of-type .back::before {
+  top: -16px;
+}
+
+#checksheet .check-item {
+  line-height: 20px;
+}
+
+#checksheet .check-list .list-item {
+  padding: 2px 8px;
+}
+
+#checksheet .check-list .list-item:not(:first-of-type) {
+  border-top: 1px dotted var(--text-color);
+}
+
+#checksheet .triangle,
+#checksheet .checklist {
+  height: 20px;
+}
+
+#checksheet .triangle {
+  position: relative;
+}
+
+#checksheet select.triangle-box {
+  background-color: transparent;
+  border-top: 1px solid var(--text-color);
+  border-left: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  border-radius: 0;
+  width: 40px;
+  height: 20px;
+  padding: 0 4px;
+  appearance: none;
+}
+
+#checksheet .other {
+  margin: 8px 3em 0;
+}
+
+#checksheet .comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3px;
+}
+
+#checksheet .comment p:last-child {
+  font-size: 13px;
+}
+
+#checksheet textarea {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  padding: 4px 16px;
+}
+
+/* select2 */
+#checksheet .select2-container--default .select2-selection--multiple {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  margin-right: 3em;
+}
+
+#checksheet .select2-selection__rendered {
+  padding: 4px 16px;
+}
+
+#checksheet .confirm {
+  display: none;
+}
+
+.no-access {
+  color: var(--text-color);
+}
+
+.creation-date {
+  display: block;
+}
