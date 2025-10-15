@@ -41,7 +41,7 @@
 ---
 
 ## 📂 ディレクトリ構成
-project/
+project/  
 ├── checkseat.php  
 ├── control.php  
 ├── delete.php  
