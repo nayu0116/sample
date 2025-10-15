@@ -86,10 +86,10 @@ if (isset($_GET['id'])) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styleseat.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/styleseat.css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/print.css" media="print" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/print.css" media="print" type="text/css" />
   <title>情報加工検査チェックシート</title>
 </head>
 
@@ -1052,8 +1052,8 @@ if (isset($_GET['id'])) {
       select.classList.add('no-access');
     }
   </script>
-  <script src="./js/line.js"></script>
-  <script src="./js/confirm.js"></script>
+  <script src="./assets/js/line.js"></script>
+  <script src="./assets/js/confirm.js"></script>
 </body>
 
 </html>

@@ -135,8 +135,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['login'])) {
       </form>
     </div>
   </main>
-  <script src="./js/jquery-3.6.3.min.js"></script>
-  <script src="./js/form-highlight.js"></script>
+  <script src="./assets/js/jquery-3.6.3.min.js"></script>
+  <script src="./assets/js/form-highlight.js"></script>
 
 </body>
 

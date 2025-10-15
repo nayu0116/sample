@@ -53,8 +53,8 @@ $loginName = h($_SESSION['loginName']);
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styleseat.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/styleseat.css">
   <title>情報加工検査チェックシート</title>
 </head>
 
@@ -78,12 +78,12 @@ $loginName = h($_SESSION['loginName']);
       <ul class="menu">
         <li>
           <a href="checkseat.php">
-            <img src="./img/new.svg" alt="">
+            <img src="./assets/img/new.svg" alt="">
           </a>
         </li>
         <li>
           <a href="search.php">
-            <img src="./img/seaech.svg" alt="">
+            <img src="./assets/img/seaech.svg" alt="">
           </a>
         </li>
       </ul>
@@ -105,8 +105,8 @@ $loginName = h($_SESSION['loginName']);
     </div>
   </div>
 
-  <script src="./js/jquery-3.6.3.min.js"></script>
-  <script src="./js/modal.js"></script>
+  <script src="./assets/js/jquery-3.6.3.min.js"></script>
+  <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>

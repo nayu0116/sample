@@ -158,8 +158,8 @@ $_SESSION['session_token'] = $session_token;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styleseat.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/styleseat.css">
   <title>情報加工課検査チェックシート</title>
 </head>
 
@@ -261,9 +261,9 @@ $_SESSION['session_token'] = $session_token;
     </div>
   </div>
 
-  <script src="./js/jquery-3.6.3.min.js"></script>
-  <script src="./js/control.js"></script>
-  <script src="./js/modal.js"></script>
+  <script src="./assets/js/jquery-3.6.3.min.js"></script>
+  <script src="./assets/js/control.js"></script>
+  <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>

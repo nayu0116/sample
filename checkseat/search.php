@@ -119,8 +119,8 @@ $pdo = null;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styleseat.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/styleseat.css">
   <title>情報加工検査チェックシート</title>
 </head>
 
@@ -217,9 +217,9 @@ $pdo = null;
       <a style="display: none" id="downloader" href="#"></a>
     </div>
   </main>
-  <script src="./js/jquery-3.6.3.min.js"></script>
-  <script src="./js/sort.js"></script>
-  <script src="./js/csv_export.js"></script>
+  <script src="./assets/js/jquery-3.6.3.min.js"></script>
+  <script src="./assets/js/sort.js"></script>
+  <script src="./assets/js/csv_export.js"></script>
 </body>
 
 </html>
