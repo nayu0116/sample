@@ -42,19 +42,19 @@
 
 ## 📂 ディレクトリ構成
 project/
-├── checkseat.php
-├── control.php
-├── delete.php
-├── edit.php
-├── index.php
-├── login.php
-├── search.php
-├── send.php
-├── update.php
-├── assets/
-│ ├── css/
-│ ├── img/
-│ └── js/
+├── checkseat.php  
+├── control.php  
+├── delete.php  
+├── edit.php  
+├── index.php  
+├── login.php  
+├── search.php  
+├── send.php  
+├── update.php  
+├── assets/  
+│ ├── css/  
+│ ├── img/  
+│ └── js/  
 └── dbconnect.php
 
 
