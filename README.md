@@ -55,11 +55,6 @@
 | ![login](./img/login.png) | ![dashboard](./img/dashboard.png) |
 | 入力内容の出力機能を実装しました | 入力内容によってチェックが不要な所は動的に非表示になり<br>作業者の誤入力を防止 |
 
-<table>
-  <tr><th width="400">ID</th><th width="400">Item</th></tr>
-  <tr><td>1</td><td>いぬのえさ</td></tr>
-  <tr><td>1</td><td>いぬのえさ</td></tr>
-</table>
 
 ---
 
