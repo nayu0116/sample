@@ -36,7 +36,7 @@
 ## 🖥️ 画面イメージ
 | ログイン画面 | 勤怠管理画面 |
 |---------------|--------------|
-| ![login](./images/login.png) | ![dashboard](./images/dashboard.png) |
+| ![login](./img/login.png) | ![dashboard](./img/dashboard.png) |
 
 ---
 
