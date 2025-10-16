@@ -61,7 +61,7 @@ if (isset($_POST["search"])) {
     // 少なくとも1つの項目が入力されているかチェック
     if (!empty($search_number) || !empty($search_productname) || !empty($search_name)) {
       // SQLクエリの作成
-      $sql = "SELECT * FROM checkseat WHERE 1";
+      $sql = "SELECT * FROM checksheet WHERE 1";
       $params = [];
 
       if (!empty($search_number)) {
@@ -94,14 +94,14 @@ if (isset($_POST["search"])) {
   }
   // エラーがある場合は全データを表示（検索結果をリセット）
   if ($err_msg !== '') {
-    $sql = 'SELECT * FROM checkseat WHERE 1';
+    $sql = 'SELECT * FROM checksheet WHERE 1';
     $rec = $pdo->prepare($sql);
     $rec->execute();
     $rec_list = $rec->fetchAll(PDO::FETCH_ASSOC);
   }
 } else {
   // 「検索」ボタンが押されていない場合全件表示
-  $sql = 'SELECT * FROM checkseat WHERE 1';
+  $sql = 'SELECT * FROM checksheet WHERE 1';
   $rec = $pdo->prepare($sql);
   $rec->execute();
   $rec_list = $rec->fetchAll(PDO::FETCH_ASSOC);
@@ -120,7 +120,7 @@ $pdo = null;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link rel="stylesheet" href="./assets/css/styleseat.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>情報加工検査チェックシート</title>
 </head>
 

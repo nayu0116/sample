@@ -54,7 +54,7 @@ $loginName = h($_SESSION['loginName']);
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link rel="stylesheet" href="./assets/css/styleseat.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>情報加工検査チェックシート</title>
 </head>
 
@@ -77,7 +77,7 @@ $loginName = h($_SESSION['loginName']);
       ?>
       <ul class="menu">
         <li>
-          <a href="checkseat.php">
+          <a href="checksheet.php">
             <img src="./assets/img/new.svg" alt="">
           </a>
         </li>

@@ -6,7 +6,7 @@
  */
 function dbConnect()
 {
-  define('DB_HOST', 'mysql:dbname=checkseat;host=localhost;charset=utf8');
+  define('DB_HOST', 'mysql:dbname=checksheet;host=localhost;charset=utf8');
   define('DB_USER', 'root');
   define('DB_PASSWORD', 'root');
 

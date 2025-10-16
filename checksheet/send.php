@@ -22,6 +22,8 @@ function h($s)
 {
   return htmlspecialchars($s, ENT_QUOTES, "UTF-8");
 }
+// ログイン中のユーザー情報を表示（★クロスサイトスクリプティング）
+$loginName = h($_SESSION['loginName']);
 
 if (!isset($_POST['session_token']) || $_POST['session_token'] !== $_SESSION['session_token']) {
 
@@ -33,9 +35,7 @@ if (!isset($_POST['session_token']) || $_POST['session_token'] !== $_SESSION['se
     // データベースに接続する
     $pdo = dbConnect();
 
-    $id = $_SESSION['id'];
-
-    //edit.phpの値を取得
+    //index.phpの値を取得
     $Aday = isset($_POST['Aday']) && !empty($_POST['Aday']) ? $_POST['Aday'] : null;
     $BCday = isset($_POST['BCday']) && !empty($_POST['BCday']) ? $_POST['BCday'] : null;
     $kousei = isset($_POST['kousei']) && !empty($_POST['kousei']) ? $_POST['kousei'] : null;
@@ -100,26 +100,10 @@ if (!isset($_POST['session_token']) || $_POST['session_token'] !== $_SESSION['se
       $sagyou_tantou = implode(', ', $_POST['sagyou_tantou']);
     }
 
-    $sql = "UPDATE checkseat SET
-      Aday = :Aday,
-      BCday = :BCday,
-      kousei = :kousei,
-      number = :number,
-      type = :type,
-      naikou = :naikou,
-      hinmei = :hinmei,
-      orisuu = :orisuu,
-      omote = :omote,
-      ura = :ura,
-      kensa = :kensa,
-      triangles = :triangles,
-      checklists = :checklists,
-      comment = :comment,
-      kensa_sekinin = :kensa_sekinin,
-      kensa_tantou = :kensa_tantou,
-      sagyou_tantou = :sagyou_tantou
-    WHERE id = :id ";
-    $stmt = $pdo->prepare($sql);
+    $sql = "INSERT INTO checksheet (Aday, BCday, kousei, number, type, naikou, hinmei, orisuu, omote, ura, kensa, triangles, checklists, comment, kensa_sekinin, kensa_tantou, sagyou_tantou) VALUES (:Aday, :BCday, :kousei, :number, :type, :naikou, :hinmei, :orisuu, :omote, :ura, :kensa, :triangles, :checklists, :comment, :kensa_sekinin, :kensa_tantou, :sagyou_tantou)";
+
+    // テーブルに登録するINSERT INTO文を変数に格納VALUESはプレースフォルダーで空の値を入れとく
+    $stmt = $pdo->prepare($sql); //値が空のままSQL文をセット
     $params = array(
       ':Aday' => $Aday,
       ':BCday' => $BCday,
@@ -137,8 +121,7 @@ if (!isset($_POST['session_token']) || $_POST['session_token'] !== $_SESSION['se
       ':comment' => $comment,
       ':kensa_sekinin' => $kensa_sekinin,
       ':kensa_tantou' => $kensa_tantou,
-      ':sagyou_tantou' => $sagyou_tantou,
-      ':id' => $id
+      ':sagyou_tantou' => $sagyou_tantou
     ); // 挿入する値を配列に格納
     $stmt->execute($params); //挿入する値が入った変数をexecuteにセットしてSQLを実行
 
@@ -147,9 +130,10 @@ if (!isset($_POST['session_token']) || $_POST['session_token'] !== $_SESSION['se
     $result = "接続エラー";
   }
 }
+
 ?>
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
@@ -158,7 +142,7 @@ if (!isset($_POST['session_token']) || $_POST['session_token'] !== $_SESSION['se
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link rel="stylesheet" href="./assets/css/styleseat.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>情報加工検査チェックシート</title>
 </head>
 
@@ -181,11 +165,11 @@ if (!isset($_POST['session_token']) || $_POST['session_token'] !== $_SESSION['se
   <main id="completion-page">
     <div class="completion-message">
       <?php if ($result === "登録完了") : ?>
-        <p class="message-title">更新完了しました</p>
-        <p class="message"><span style="display: inline-block;">チェックシートをデータベースへ更新しました。</span><span style="display: inline-block;">入力内容を確認する場合は下のリンクから検索してください。</span></p>
+        <p class="message-title">登録完了しました</p>
+        <p class="message"><span style="display: inline-block;">チェックシートをデータベースへ登録しました。</span><span style="display: inline-block;">入力内容を確認する場合は下のリンクから検索してください。</span></p>
       <?php elseif ($result = "接続エラー") : ?>
-        <p class="message-title">更新できませんでした</p>
-        <p class="message"><span style="display: inline-block;">データベースへの更新でエラーが発生しました。</span><span style="display: inline-block;">この画面が表示された場合は中西までお願いします。</span></p>
+        <p class="message-title">登録できませんでした</p>
+        <p class="message"><span style="display: inline-block;">データベースへの登録でエラーが発生しました。</span><span style="display: inline-block;">この画面が表示された場合は中西までお願いします。</span></p>
       <?php endif; ?>
       <a href="./search.php" class="top-btn">検索画面へ</a>
     </div>
