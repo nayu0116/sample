@@ -40,18 +40,77 @@
 ## 🖥️ 画面イメージ
 | ログイン画面 | メニュー画面 |
 |---------------|--------------|
-| ![login](./img/login.png) | ![dashboard](./img/dashboard.png) |
+| ![login](./assets/img/login.png) | ![dashboard](./assets/img/top.png) |
 | ログインの仕様にはセッションを利用しアクセス制御を行っています | 誰でも使いやすいようにシンプルなデザインにしました |
 | 新規登録画面 | 勤怠管理画面 |
-| ![login](./img/login.png) | ![dashboard](./img/dashboard.png) |
+| ![login](./assets/img/login.png) | ![dashboard](./assets/img/dashboard.png) |
 | チェックシートを新規登録できます<br>内容は紙ベースのままデザインを改良しました | 入力内容によってチェックが不要な所は動的に非表示になり作業者の誤入力を防止 |
 | 検索画面 | 勤怠管理画面 |
-| ![login](./img/login.png) | ![dashboard](./img/dashboard.png) |
+| ![login](./assets/img/login.png) | ![dashboard](./assets/img/dashboard.png) |
 | 過去に登録したチェックシートを検索することができます<br>項目ごとに昇順降順と並び替え機能も実装しました | 作業者の引き継ぎも編集機能で効率的になりました |
 | 新規登録画面 | 管理画面 |
-| ![login](./img/login.png) | ![dashboard](./img/dashboard.png) |
+| ![login](./assets/img/login.png) | ![dashboard](./assets/img/dashboard.png) |
 | 入力内容の出力機能を実装しました | 決められたアカウントのみ表示できるページです<br>ログインアカウントやチェックシートで入力する作業者を登録・削除できます<br>誤操作によるアカウント削除を防止するため確認ダイアログを実装しました |
 
+<table>
+  <tr>
+    <th>ログイン画面</th>
+    <th>メニュー画面</th>
+  </tr>
+  <tr>
+    <td><img src="./assets/img/login.png"></td>
+    <td><img src="./assets/img/top.png"></td>
+  </tr>
+  <tr>
+    <td>ログインの仕様にはセッションを利用しアクセス制御を行っています</td>
+    <td>誰でも使いやすいようにシンプルなデザインにしました</td>
+  </tr>
+  <tr>
+    <th colspan="2">新規登録画面</th>
+  </tr>
+  <tr>
+    <td><img src="./assets/img/new1.png"></td>
+    <td><img src="./assets/img/new2.png"></td>
+  </tr>
+  <tr>
+    <td>チェックシートを新規登録できます<br>内容は紙ベースのままデザインを改良しました</td>
+    <td>入力内容によってチェックが不要な所は動的に非表示になり作業者の誤入力を防止</td>
+  </tr>
+  <tr>
+    <th colspan="2">検索画面</th>
+  </tr>
+  <tr>
+    <td><img src="./assets/img/search1.png"></td>
+    <td><img src="./assets/img/search2.png"></td>
+  </tr>
+  <tr>
+    <td>過去に登録したチェックシートが全て表示されます<br>項目ごとに昇順降順と並び替え機能も実装しました</td>
+    <td>過去に登録したチェックシートを検索・編集することができます</td>
+  </tr>
+  <tr>
+    <th colspan="2">編集画面</th>
+  </tr>
+  <tr>
+    <td><img src="./assets/img/edit1.png"></td>
+    <td><img src="./assets/img/edit2.png"></td>
+  </tr>
+  <tr>
+    <td>ログインの仕様にはセッションを利用しアクセス制御を行っています</td>
+    <td>誰でも使いやすいようにシンプルなデザインにしました</td>
+  </tr>
+  <tr>
+    <th>出力画面</th>
+    <th>管理画面</th>
+  </tr>
+  <tr>
+    <td><img src="./assets/img/copy.png"></td>
+    <td><img src="./assets/img/control.png"></td>
+  </tr>
+  <tr>
+    <td>入力内容の出力機能を実装しました<br>コピー出力しても用紙に全ての内容が収まるよう調整しました</td>
+    <td>決められたアカウントのみ表示できるページです<br>ログインアカウントやチェックシートで入力する作業者を登録・削除できます</td>
+  </tr>
+</table>
 
 ---
 
