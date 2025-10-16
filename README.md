@@ -44,8 +44,8 @@
     <th width="600">メニュー画面</th>
   </tr>
   <tr>
-    <td><img src="./assets/img/login.png" width="600"></td>
-    <td><img src="./assets/img/top.png" width="600"></td>
+    <td><img src="./assets/readme-img/login.png" width="600"></td>
+    <td><img src="./assets/readme-img/top.png" width="600"></td>
   </tr>
   <tr>
     <td>ログインIDとパスワードでの認証機能を実装しました。<br>ログインの仕様にはセッションを利用しアクセス制御を行っています。</td>
@@ -55,8 +55,8 @@
     <th colspan="2">新規登録画面</th>
   </tr>
   <tr>
-    <td><img src="./assets/img/new1.png" width="600"></td>
-    <td><img src="./assets/img/new2.png" width="600"></td>
+    <td><img src="./assets/readme-img/new1.png" width="600"></td>
+    <td><img src="./assets/readme-img/new2.png" width="600"></td>
   </tr>
   <tr>
     <td>チェックシートを新規登録できます。<br>内容は紙ベースのままデザインを改良しました。</td>
@@ -66,8 +66,8 @@
     <th colspan="2">検索画面</th>
   </tr>
   <tr>
-    <td><img src="./assets/img/search1.png" width="600"></td>
-    <td><img src="./assets/img/search2.png" width="600"></td>
+    <td><img src="./assets/readme-img/search1.png" width="600"></td>
+    <td><img src="./assets/readme-img/search2.png" width="600"></td>
   </tr>
   <tr>
     <td>過去に登録したチェックシートが全て表示されます。<br>項目ごとに昇順降順と並び替え機能も実装しました。</td>
@@ -77,8 +77,8 @@
     <th colspan="2">編集画面</th>
   </tr>
   <tr>
-    <td><img src="./assets/img/edit1.png" width="600"></td>
-    <td><img src="./assets/img/edit2.png" width="600"></td>
+    <td><img src="./assets/readme-img/edit1.png" width="600"></td>
+    <td><img src="./assets/readme-img/edit2.png" width="600"></td>
   </tr>
   <tr>
     <td>登録済みのチェックシートの編集ができます。<br>工程を進める際の作業者の引き継ぎが簡単になりました。</td>
@@ -89,8 +89,8 @@
     <th>管理画面</th>
   </tr>
   <tr>
-    <td><img src="./assets/img/copy.png" width="600"></td>
-    <td><img src="./assets/img/control.png" width="600"></td>
+    <td><img src="./assets/readme-img/copy.png" width="600"></td>
+    <td><img src="./assets/readme-img/control.png" width="600"></td>
   </tr>
   <tr>
     <td>入力内容の出力機能を実装しました。<br>コピー出力しても用紙に全ての内容が収まるよう調整しました。</td>
